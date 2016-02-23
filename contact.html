@@ -1,0 +1,142 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Hsuan Lisa Yu</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="keywords" content="Game, Unity, design, level, lisa yu, hsuan,UI , UX, Scripting"/>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery-1.11.1.min.js"></script>
+<!-- Custom Theme files -->
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<!-- Custom Theme files -->
+<!----start-top-nav-script---->
+		<script>
+			$(function() {
+				var pull 		= $('#pull');
+					menu 		= $('nav ul');
+					menuHeight	= menu.height();
+				$(pull).on('click', function(e) {
+					e.preventDefault();
+					menu.slideToggle();
+				});
+				$(window).resize(function(){
+	        		var w = $(window).width();
+	        		if(w > 320 && menu.is(':hidden')) {
+	        			menu.removeAttr('style');
+	        		}
+	    		});
+			});
+		</script>
+		<!----//End-top-nav-script---->
+<script src="js/jquery.easydropdown.js"></script>
+</head>
+<body>
+ <!----start-header---->
+		<div class="header">
+			<div class="container">
+			  <div class="dropdown_box">
+				   <select class="dropdown" tabindex="10" data-settings='{"wrapperClass":"metro"}'>
+            			<option value="0">English</option>	
+						<option value="1">Chinese</option>
+						<option value="2">Japanese</option>
+				   </select>
+		       </div>
+		       <div class="clearfix"> </div>
+		      <div class="header_top">
+				<div class="logo">
+				  <a href="index.html"><img src="images/logo.png" alt=""/></a>
+				</div>
+		  		<div class="menu">
+					<a class="toggleMenu" href="#"><img src="images/nav_icon.png" alt=""/> </a>
+					<ul class="nav" id="nav">
+					  <li><a href="index.html">Home</a></li>
+					  <li><a href="about.html">About me</a></li>
+					  <li><a href="gameDesign.html">Game Design</a></li>
+					  <li><a href="prototype.html">Prototype</a></li>
+					  <li><a href="UIUX.html">UI/UX</a></li>
+					  <li><a href="sketch.html">Sketch</a></li>
+					  <li><a href="contact.html">Contacts</a></li>									
+					</ul>
+					<script type="text/javascript" src="js/responsive-nav.js"></script>
+				</div>							
+	  			<div class="clearfix"> </div>
+			    <!----//End-top-nav---->
+			 </div>
+		   </div>
+	  </div>
+		<!----//End-header---->
+	 <div class="services">
+	    <div class="container">
+		 <div class="col-md-9">
+		 	<div class="single_contact contact_left">
+	  			  <h1>Contact Me</h1>
+	  			 <form>
+					<div class="column_2">
+                     	<input type="text" class="text" value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}">
+					 	<input type="text" class="text" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" style="margin-left:2.7%">
+					 	<input type="text" class="text" value="Subject" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Subject';}" style="margin-left:2.7%">
+					</div>
+					<div class="column_3">
+	                   <textarea value="Message:" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message';}">Message:</textarea>
+	                </div>
+	                <div class="form-submit1">
+			           <label class="btn btn-primary btn-normal btn-inline " target="_self"><input type="submit" value="Send Message"></label>
+					</div>
+					<div class="clearfix"> </div>
+				  </form>
+		       </div>
+		 </div>
+		 <div class="col-md-3 contact_right">
+		 	<h2>Information</h2>
+		 	<ul class="address">
+		 		<i class="address_icon"> </i>
+		 		<li class="address_desc">
+		 			<p>San Francisco, CA</p>
+		 		</li>
+		 		<div class="clearfix"> </div>
+		 	</ul>
+		 	<ul class="address">
+		 		<i class="msg_icon"> </i>
+		 		<li class="address_desc">
+		 			<p><a href="lisa31901@gmail.com">mail(at)gelios.com</a><br></p>
+		 		</li>
+		 		<div class="clearfix"> </div>
+		 	</ul>
+		 	<ul class="address">
+		 		<i class="phone_icon"> </i>
+		 		<li class="address_desc">
+		 			<p>+415-623-4232</p>
+		 		</li>
+		 		<div class="clearfix"> </div>
+		 	</ul>
+		 </div>
+	    </div>
+     </div>
+    <div class="footer">
+   	<div class="container">
+
+	    	<div class="copy">
+				<p>&copy; Hsuan Yu (Lisa) own persnoal website upadted by 2016</a></p>
+			</div>
+   </div>
+    <link href="css/flexslider.css" rel='stylesheet' type='text/css' />
+							  <script defer src="js/jquery.flexslider.js"></script>
+							  <script type="text/javascript">
+								$(function(){
+								  SyntaxHighlighter.all();
+								});
+								$(window).load(function(){
+								  $('.flexslider').flexslider({
+									animation: "slide",
+									start: function(slider){
+									  $('body').removeClass('loading');
+									}
+								  });
+								});
+							  </script>
+</body>
+</html>		

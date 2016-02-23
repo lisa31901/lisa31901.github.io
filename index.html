@@ -1,0 +1,139 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Hsuan Lisa Yu</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="keywords" content="Game, Unity, design, level, lisa yu, hsuan,UI , UX, Scripting"/>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery-1.11.1.min.js"></script>
+<!-- Custom Theme files -->
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<!-- Custom Theme files -->
+<link href='http://fonts.googleapis.com/css?family=Playball' rel='stylesheet' type='text/css'>
+<!----start-top-nav-script---->
+		<script>
+			$(function() {
+				var pull 		= $('#pull');
+					menu 		= $('nav ul');
+					menuHeight	= menu.height();
+				$(pull).on('click', function(e) {
+					e.preventDefault();
+					menu.slideToggle();
+				});
+				$(window).resize(function(){
+	        		var w = $(window).width();
+	        		if(w > 320 && menu.is(':hidden')) {
+	        			menu.removeAttr('style');
+	        		}
+	    		});
+			});
+		</script>
+		<!----//End-top-nav-script---->
+<script src="js/jquery.easydropdown.js"></script>
+<!----- start-Share-instantly-slider---->
+					 <!-- Prettify -->
+						<link href="css/owl.carousel.css" rel="stylesheet">
+					    <script src="js/owl.carousel.js"></script>
+					    <script>
+						    $(document).ready(function() {
+						      $("#owl-demo , #owl-demo1").owlCarousel({
+						        items : 1,
+						        lazyLoad : true,
+						        autoPlay : true,
+						      });
+						    });
+					    </script>
+					    <script>
+						    $(document).ready(function() {
+						      $("#owl-demo3").owlCarousel({
+						        items : 4,
+						        lazyLoad : true,
+						        autoPlay : true,
+						        navigation: false,
+						        pagination: false,
+						      });
+						    });
+					    </script>
+					<!----- //End-Share-instantly-slider---->
+<script type="text/javascript" src="js/hover_pack.js"></script>
+<script src="js/highcharts.js"></script>
+</head>
+<body>
+ <!----start-header---->
+		<div class="header">
+			<div class="container">
+			  <div class="dropdown_box">
+				   <select class="dropdown" tabindex="10" data-settings='{"wrapperClass":"metro"}'>
+            			<option value="0">English</option>	
+						<option value="1">Chinese</option>
+						<option value="2">Japanese</option>
+				   </select>
+		       </div>
+		       <div class="clearfix"></div>
+		      <div class="header_top">
+				<div class="logo">
+				  <a href="index.html"><img src="images/logo.png" alt=""></a>
+				</div>
+		  		<div class="menu">
+					<a class="toggleMenu" href="#"><img src="images/nav_icon.png" alt="" /> </a>
+					<ul class="nav" id="nav">
+					  <li><a href="index.html">Home</a></li>
+					  <li><a href="about.html">About me</a></li>
+					  <li><a href="gameDesign.html">Game Design</a></li>
+					  <li><a href="prototype.html">Prototype</a></li>
+					  <li><a href="UIUX.html">UI/UX</a></li>
+					  <li><a href="sketch.html">Sketch</a></li>
+					  <li><a href="contact.html">Contacts</a></li>									
+					</ul>
+					<script type="text/javascript" src="js/responsive-nav.js"></script>
+				</div>							
+			    <!----//End-top-nav---->
+			 </div>
+			</div>
+		</div>
+		<!----//End-header---->
+    <div class="container">
+      <div class="about_grid1">
+          <!-- FlexSlider -->
+              <section class="slider">
+				  <div class="flexslider">
+					<ul class="slides">
+						<li><img src="images/1.jpg" class="img-responsive" alt=""/></li>
+						<li><img src="images/2.jpg" alt=""/></li>
+						<li><img src="images/3.jpg" alt=""/></li>
+						<li><img src="images/4.jpg" alt=""/></li>
+						<li><img src="images/5.jpg" alt=""/></li>
+					</ul>
+				  </div>
+	          </section>
+	     <!-- FlexSlider -->
+   	</div>
+
+    <div class="footer">
+   	<div class="container">
+
+	    	<div class="copy">
+				<p>&copy; Hsuan Yu (Lisa) own persnoal website upadted by 2016</a></p>
+			</div>
+   </div>
+    <link href="css/flexslider.css" rel='stylesheet' type='text/css' />
+							  <script defer src="js/jquery.flexslider.js"></script>
+							  <script type="text/javascript">
+								$(function(){
+								  SyntaxHighlighter.all();
+								});
+								$(window).load(function(){
+								  $('.flexslider').flexslider({
+									animation: "slide",
+									start: function(slider){
+									  $('body').removeClass('loading');
+									}
+								  });
+								});
+							  </script>
+</body>
+</html>		

@@ -1,0 +1,156 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Hsuan Lisa Yu</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="keywords" content="Game, Unity, design, level, lisa yu, hsuan,UI , UX, Scripting"/>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery-1.11.1.min.js"></script>
+<!-- Custom Theme files -->
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<!-- Custom Theme files -->
+<link href='http://fonts.googleapis.com/css?family=Playball' rel='stylesheet' type='text/css'>
+<!----start-top-nav-script---->
+		<script>
+			$(function() {
+				var pull 		= $('#pull');
+					menu 		= $('nav ul');
+					menuHeight	= menu.height();
+				$(pull).on('click', function(e) {
+					e.preventDefault();
+					menu.slideToggle();
+				});
+				$(window).resize(function(){
+	        		var w = $(window).width();
+	        		if(w > 320 && menu.is(':hidden')) {
+	        			menu.removeAttr('style');
+	        		}
+	    		});
+			});
+		</script>
+		<!----//End-top-nav-script---->
+<script src="js/jquery.easydropdown.js"></script>
+<!----- start-Share-instantly-slider---->
+					 <!-- Prettify -->
+						<link href="css/owl.carousel.css" rel="stylesheet">
+					    <script src="js/owl.carousel.js"></script>
+					    <script>
+						    $(document).ready(function() {
+						      $("#owl-demo , #owl-demo1").owlCarousel({
+						        items : 1,
+						        lazyLoad : true,
+						        autoPlay : true,
+						      });
+						    });
+					    </script>
+					    <script>
+						    $(document).ready(function() {
+						      $("#owl-demo3").owlCarousel({
+						        items : 4,
+						        lazyLoad : true,
+						        autoPlay : true,
+						        navigation: false,
+						        pagination: false,
+						      });
+						    });
+					    </script>
+					<!----- //End-Share-instantly-slider---->
+<script type="text/javascript" src="js/hover_pack.js"></script>
+</head>
+<body>
+ <!----start-header---->
+		<div class="header">
+			<div class="container">
+			  <div class="dropdown_box">
+				   <select class="dropdown" tabindex="10" data-settings='{"wrapperClass":"metro"}'>
+            			<option value="0">English</option>	
+						<option value="1">Chinese</option>
+						<option value="2">Japanese</option>
+				   </select>
+		       </div>
+		       <div class="clearfix"></div>
+		      <div class="header_top">
+				<div class="logo">
+				  <a href="index.html"><img src="images/logo.png" alt=""></a>
+				</div>
+		  		<div class="menu">
+					<a class="toggleMenu" href="#"><img src="images/nav_icon.png" alt="" /> </a>
+					<ul class="nav" id="nav">
+					  <li class="current"><a href="index.html">Home</a></li>
+					  <li><a href="about.html">About me</a></li>
+					  <li><a href="gameDesign.html">Game Design</a></li>
+					  <li><a href="prototype.html">Prototype</a></li>
+					  <li><a href="UIUX.html">UI/UX</a></li>
+					  <li><a href="sketch.html">Sketch</a></li>
+					  <li><a href="contact.html">Contacts</a></li>								
+					</ul>
+					<script type="text/javascript" src="js/responsive-nav.js"></script>
+				</div>							
+	  			<div class="clearfix"> </div>
+			    <!----//End-top-nav---->
+			 </div>
+			</div>
+		</div>
+		<!----//End-header---->
+		<div class="banner">
+		  <div class="banner_container">
+       	      <div class="wmuSlider example1">
+			     <div class="wmuSliderWrapper">
+				  <article style="position: absolute; width: 100%; opacity: 0;"> 
+				        <div class="banner_right">
+				   	    	<h1>Welcome to <span class="color1">Lisa's</span>website<span class="color1">.</span></h1>
+				   	    	<h2>An organized and self-disciplined person with high interest in learning new things.</h2>
+				   	    	<a href="#" title="Online Reservation" class="btn btn-primary btn-normal btn-inline " target="_self">Read More about me</a>
+				   	    </div>
+					    <div class="clearfix"></div>
+					</article>
+				    <article style="position: relative; width: 100%; opacity: 1;"> 
+				   	  <div class="banner_right">
+				   	    	<h1>Welcome to <span class="color1">Lisa's</span>website<span class="color1">.</span></h1>
+				   	    	<h2>Take look of my works.</h2>
+				   	    	<a href="#" title="Online Reservation" class="btn btn-primary btn-normal btn-inline " target="_self">GO TO PORTFOLIO </a>
+				   	    	<div class="col-md-6 about_grid1-left">
+
+	     			</div>
+				   	    </div>
+					    <div class="clearfix"></div>
+				   </article>
+				 </div>
+				 <a class="wmuSliderPrev">Previous</a><a class="wmuSliderNext">Next</a>
+	             <script src="js/jquery.wmuSlider.js"></script> 
+				  <script>
+	       			$('.example1').wmuSlider();         
+	   		     </script> 	           	      
+      </div>
+     </div>
+    </div>
+
+        <div class="footer">
+   	<div class="container">
+
+	    	<div class="copy">
+				<p>&copy; Hsuan Yu (Lisa) own persnoal website upadted by 2016</a></p>
+			</div>
+   </div>
+    <link href="css/flexslider.css" rel='stylesheet' type='text/css' />
+							  <script defer src="js/jquery.flexslider.js"></script>
+							  <script type="text/javascript">
+								$(function(){
+								  SyntaxHighlighter.all();
+								});
+								$(window).load(function(){
+								  $('.flexslider').flexslider({
+									animation: "slide",
+									start: function(slider){
+									  $('body').removeClass('loading');
+									}
+								  });
+								});
+							  </script>
+
+</body>
+</html>		

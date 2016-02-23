@@ -1,0 +1,137 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="keywords" content="Game, Unity, design, level, lisa yu, hsuan,UI , UX, Scripting"/>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery-1.11.1.min.js"></script>
+<!-- Custom Theme files -->
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<!-- Custom Theme files -->
+<!----start-top-nav-script---->
+		<script>
+			$(function() {
+				var pull 		= $('#pull');
+					menu 		= $('nav ul');
+					menuHeight	= menu.height();
+				$(pull).on('click', function(e) {
+					e.preventDefault();
+					menu.slideToggle();
+				});
+				$(window).resize(function(){
+	        		var w = $(window).width();
+	        		if(w > 320 && menu.is(':hidden')) {
+	        			menu.removeAttr('style');
+	        		}
+	    		});
+			});
+		</script>
+		<!----//End-top-nav-script---->
+<script src="js/jquery.easydropdown.js"></script>
+</head>
+<body>
+ <!----start-header---->
+		<div class="header">
+			<div class="container">
+			  <div class="dropdown_box">
+				   <select class="dropdown" tabindex="10" data-settings='{"wrapperClass":"metro"}'>
+            			<option value="0">English</option>	
+						<option value="1">Chinese</option>
+						<option value="2">Japanese</option>
+				   </select>
+		       </div>
+		       <div class="clearfix"></div>
+		      <div class="header_top">
+				<div class="logo">
+				  <a href="index.html"><img src="images/logo.png" alt=""></a>
+				</div>
+		  		<div class="menu">
+					<a class="toggleMenu" href="#"><img src="images/nav_icon.png" alt="" /> </a>
+					<ul class="nav" id="nav">
+					  <li><a href="index.html">Home</a></li>
+					  <li><a href="about.html">About me</a></li>
+					  <li><a href="gameDesign.html">Game Design</a></li>
+					  <li><a href="prototype.html">Prototype</a></li>
+					  <li><a href="UIUX.html">UI/UX</a></li>
+					  <li><a href="sketch.html">Sketch</a></li>
+					  <li><a href="contact.html">Contacts</a></li>								
+					</ul>
+					<script type="text/javascript" src="js/responsive-nav.js"></script>
+				</div>							
+	  			<div class="clearfix"> </div>
+			    <!----//End-top-nav---->
+			 </div>
+		   </div>
+		</div>
+		<!----//End-header---->
+		<div class="services">
+		  <div class="service_grid1">
+			<div class="container">
+				<div class="col-md-6">
+					<iframe width="353" height="353" img src="images/me.jpg" alt=""/></iframe>
+				</div>
+				<div class="col-md-6 service_grid1-right">
+					<h3>Ahout Me</h3>
+					<p>As a designer, I focus on coding in game level design because I want to use game engines to make APPs and games. My undergraduate major and focus on 2D drawing and 3D modeling in industrial design focused completely on the artistic, and I worked as a designer in the private sector in industrial design. Added to this knowledge in the industrial design field is my belief that the pervasiveness of tablet computers is creating great developmental possibilities for interactive design and game design. I hope to become an expert in these areas and pursue my professional ambitions therein.</p>			
+				</div>
+			</div>
+		  </div>
+		  <div class="grid_1 text-center">
+    	  <div class="container">
+    		<div class="row_1">
+	    	  <div class="col-md-6 box_1">
+	    	  	<i class="icon1"> </i>
+	    	  	<h3>Education</h3>
+	    	  	<p>Academy of art University - Game Design</p>
+	    	  	<p>Huafan University - Bachelor of Science in Industrial Design</p>
+	    	  	<p>Chinese Culture University School of Continuing Education - Game Design Program </p>
+				<p>YWCA (Osaka, Japan) - Japanese Study</p> 
+				<p>Korea University - Korean Language & Culture Program </p>
+	    	  </div>
+	    	  <div class="col-md-6 box_1">
+	    	  	<i class="icon2"> </i>
+	    	  	<h3>Experience</h3>
+	    	  	<p>Ding Gene Enterprise Ltd. Sales Assistant 2010 - 2012</p>
+	    	  	<br>
+	    	  	<br>
+	    	  	<p>Boing Boing Leo - Game Designer/ Programmer</p>
+	    	  	<p>Planet War - Game Designer/ Project Manager /Ui & Ux</p>	
+	    	  	<p>My Sweet Monster - Game Designer/ Programmer</p>
+	    	  </div>
+	    	  <div class="clearfix"> </div>
+	    	</div>
+	    	<div class="row_2">
+	    	  <div class="col-md-6 box_1">
+	    	  	<i class="icon4"> </i>
+	    	  	<h3>Languages</h3>
+	    	  	<p>Chinese (Mandarin & Taiwanese): Native Speaker</p>
+				<p>English: Fluent</p>
+				<p>Japanese: 2nd grade certificate</p>
+				<p>Korean: 2nd grade certificate</p>
+	    	  </div>
+	    	  <div class="col-md-6 box_1">
+	    	  	<i class="icon3"> </i>
+	    	  	<h3>Skills</h3>
+	    	  	<p>Photoshop&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Illustrator&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Flash&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;After Effects</p>
+	    	  	<p>Maya&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Alias&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;AutoCAD&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pro-E</p>
+	    	  	<p>Painter&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unity&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;UDK&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Logic ProX</p>
+	    	  	<p>JavaScript&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;C#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;C++&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Python</p>
+	    	  </div>
+	    	  <div class="clearfix"> </div>
+	    	</div>
+    	</div>
+      </div>
+    </div>
+    <div class="footer">
+   	<div class="container">
+
+	    	<div class="copy">
+				<p>&copy; Hsuan Yu (Lisa) own persnoal website upadted by 2016</a></p>
+			</div>
+   </div>
+</body>
+</html>		
